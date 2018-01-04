@@ -1,0 +1,425 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.ww {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+/*首页*/
+.wrap {
+	width: 100vw;
+	height: 100vh;
+	position: relation;
+	display: none;
+}
+.wrap_bj {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+}
+.jindu{
+	position: absolute;
+	top: 53vh;
+	left: 46vw;
+	font-family: "仿宋";
+	font-size: 12px;
+	color: orange;
+}
+.monkey1,
+.monkey2,
+.monkey3 {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0vh;
+}
+.zmh_logo1 {
+	width: 21vw;
+	height: 12vh;
+	position: absolute;
+	right: 2vw;
+	top: 1vh;
+}
+/*首页end*/
+
+/*西游页面*/
+.xiyou_wrap {
+	width: 100vw;
+	height: 100vh;
+	position: relation;
+	/*display: none;*/
+}
+
+.xiyou_bj {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+}
+
+.zmh_logo {
+	width: 21vw;
+	height: 12vh;
+	position: absolute;
+	right: 2vw;
+	top: 1vh;
+}
+
+.xiyou_monkey {
+	width: 48vw;
+	height: 33vh;
+	position: absolute;
+	bottom: 5.5vh;
+	left: 1.5vw;
+}
+
+.get_btn {
+	width: 100vw;
+	height: 20vh;
+	position: absolute;
+	bottom: 1.5vh;
+}
+
+/*西游end*/
+
+/*GO 页面*/
+.go_wrap {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	/*display: none;*/
+}
+
+.go_bj {
+	width: 100vw;
+	height: 100vh;
+}
+
+.go_btn {
+	width: 23vw;
+	height: 23vw;
+	position: absolute;
+	bottom: 3vh;
+	left: 39vw;
+}
+/*GO 页面end*/
+
+/*提问页面*/
+.tw_wrap{
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	/*display: none;*/
+}
+.tw_bj{
+	width: 100vw;
+	height: 100vh;
+}
+.Q{
+	width: 90vw;
+	height: 15vh;
+	position: absolute;
+	top: 8vh;
+	left: 5vw;		
+}
+.Q_tishu{
+	/*border: 1px solid black;*/
+	width: 8vw;
+	height: 2vh;
+	position: absolute;
+	top: 16.5vh;
+	left: 11vw;
+	font-size: 13px;
+	font-family: "微软雅黑";	
+}
+.tishup{
+	line-height: 2vh;
+	text-align: center;
+	font-size: 13px;
+	font-family: "微软雅黑";	
+}
+.Q_wenti{
+	width: 63vw;
+	height: 11vh;
+	overflow:hidden;
+	/*border: 1px solid black;*/
+	position: absolute;
+	top: 9vh;
+	left: 24vw;
+	text-align: center;
+	word-wrap: break-word;   /*文字超出div大小,自动换行*/
+}
+.wenti{	
+	font-size: 20px;
+	font-family: "微软雅黑";
+	display: inline-block;	
+}
+/*Q问题样式end*/
+
+.div{
+	width: 50vw;
+	height: 36vw;
+	/*border: 1px solid black;*/
+	position: absolute;
+	top: 23vh;
+	left: 26vw;
+}
+.div>img{
+	width: 100%;
+	height: 100%;
+}
+.daan_wrap{
+	/*border: 1px solid black;*/
+	position: absolute;
+	top: -1vh;
+}
+.a_wrap{
+	display: inline-block;
+	/*border:1px solid blue;*/
+	width: 90vw;
+	height: 11vh;
+	position: absolute;
+	top: 48vh;
+	left: 5vw;	
+}
+.b_wrap{
+	display: inline-block;
+	/*border:1px solid blue;*/
+	width: 90vw;
+	height: 11vh;
+	position: absolute;
+	top: 60vh;
+	left: 5vw;	
+}
+.c_wrap{
+	display: inline-block;
+	/*border:1px solid blue;*/
+	width: 90vw;
+	height: 11vh;
+	position: absolute;
+	top: 72vh;
+	left: 5vw;	
+}
+.d_wrap{
+	display: inline-block;
+	/*border:1px solid blue;*/
+	width: 90vw;
+	height: 11vh;
+	position: absolute;
+	top: 84vh;
+	left: 5vw;	
+}
+.tu{
+	width: 100%;
+	height: 100%;
+}
+.d1{
+	display: inline-block;
+	font-size: 24px;
+	font-family: "微软雅黑";
+	position: absolute;
+	top: 3vh;
+	left: 20vw;	
+	z-index: 99999;
+}
+.du1{
+	width: 10vw;
+	/*height: 10vh;*/
+	position: absolute;
+	top: 2vh;
+	right: 6vw;	
+	display:none;
+}
+.cuo1{
+	width: 10vw;
+	/*height: 10vh;*/
+	position: absolute;
+	top: 2vh;
+	right: 6vw;	
+	display:none;
+}
+.d2{
+	display: inline-block;
+	font-size: 24px;
+	font-family: "微软雅黑";
+	position: absolute;
+	top: 3.5vh;
+	left: 20vw;	
+	z-index: 99999;
+}
+.du2{
+	width: 10vw;
+	/*height: 10vh;*/
+	position: absolute;
+	top: 2vh;
+	right: 6vw;	
+	display:none;
+}
+.cuo2{
+	width: 10vw;
+	/*height: 10vh;*/
+	position: absolute;
+	top: 2vh;
+	right: 6vw;	
+	display:none;
+}
+.d3{
+	display: inline-block;
+	font-size: 24px;
+	font-family: "微软雅黑";
+	position: absolute;
+	top:3.6vh;
+	left: 20vw;	
+	z-index: 99999;
+}
+.du3{
+	width: 10vw;
+	/*height: 10vh;*/
+	position: absolute;
+	top: 2vh;
+	right: 6vw;	
+	display:none;
+}
+.cuo3{
+	width: 10vw;
+	/*height: 10vh;*/
+	position: absolute;
+	top: 2vh;
+	right: 6vw;	
+	display:none;
+}
+.d4{
+	display: inline-block;
+	font-size: 24px;
+	font-family: "微软雅黑";
+	position: absolute;
+	top:3.8vh;
+	left: 20vw;	
+	z-index: 99999;
+}
+.du4{
+	width: 10vw;
+	/*height: 10vh;*/
+	position: absolute;
+	top: 2vh;
+	right: 6vw;	
+	display:none;
+}
+.cuo4{
+	width: 10vw;
+	/*height: 10vh;*/
+	position: absolute;
+	top: 2vh;
+	right: 6vw;	
+	display:none;
+}
+/*提问页面end*/
+
+/*答对 获得称号页面 */
+.daduich_wrap{
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	display: none;
+}
+.chenghao_bj{
+	width: 100vw;
+	height: 100vh;
+}
+.main{
+	width: 70vw;
+	height: 30vh;
+	border: 1px solid black;
+	position: absolute;
+	top: 35vh;	  
+	left: 10vw;
+}
+.wan{
+	width:42vw;
+	height: 17vh;
+	position: absolute;
+	bottom: 0;
+	left: 5vw;
+}
+.dese{
+	width:50vw;
+	height: 30vh;
+	position: absolute;
+	bottom: 0;
+	left: 25vw;
+} 
+.choujiang{
+	width:42vw;
+	height: 18vh;
+	position: absolute;
+	bottom: 0;
+	right: 5vw;
+}
+/*答对 获得称号页面end */
+
+/*很遗憾 答对3题页面*/
+.dadui3_wrap{
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	display: none;
+}
+.dadui_bj{
+	width: 100vw;
+	height: 100vh;
+}
+.score{
+	position: absolute;
+	top: 25vh;
+	left: 18vw;
+	font-family: "微软雅黑";
+	font-size: 30px;
+}
+.score>span{
+	display: inline-block;
+	font-family: "微软雅黑";
+	font-size: 30px;
+	color:orange;
+}
+.yihan{
+	/*border: 1px solid black;*/
+	position: absolute;
+	top: 35vh;
+	left: 18vw;
+}
+.yihan>img{
+	width: 30vw;
+	height: 25vh;
+	margin: 0 70px;
+}
+h1{
+	margin-top: 10px;
+	color: yellow;
+	margin: 0 80px;
+	font-family: "微软雅黑";
+}
+.pp{
+	color: orange;
+	font-size: 24px;
+	margin-top: 20px;
+}
+
+.wan_hyh{
+	width:42vw;
+	height: 18vh;
+	position: absolute;
+	bottom: 0;
+	left: 5vw;
+}
+.tiaozhan{
+	width:42vw;
+	height: 20vh;
+	position: absolute;
+	bottom: 0;
+	right: 5vw;
+}
+/*很遗憾 答对3题页面*/

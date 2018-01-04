@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/南方芝麻糊.css"/>
+		<title>南方芝麻糊</title>
+	</head>
+	<body>
+	<div class="ww">
+	<!--首页-->
+		<div class="wrap">
+			<img src="img/p1-loading00.jpg" class="wrap_bj"/>
+			<img src="img/p1-loading111.png" class="monkey1"/>
+			<img src="img/p1-loading222.png" class="monkey2"/>
+			<img src="img/p1-loading333.png" class="monkey3"/>
+			<img src="img/logo-南方芝麻糊_03.png"  class="zmh_logo1"/>
+			<p class="jindu">000</p>
+		</div>
+	<!--首页end--> 
+		<a href="" id="page"></a>
+	<!--西游页面-->		
+		<div class="xiyou_wrap">
+			<img src="img/背景图-西游知多少.jpg" class="xiyou_bj"/>
+			<img src="img/logo-南方芝麻糊_03.png"  class="zmh_logo"/>
+			<img src="img/(动)猴子-西游_03.png"  class="xiyou_monkey" />
+			<img src="img/√.png" class="get_btn"/>	 <!-- get按钮-->	
+		</div>
+	<!--西游页面end-->		
+		<a href="" id="page1"></a>
+	<!--GO页面-->
+		<div class="go_wrap" >
+			<img  class="go_bj" src="img/p2-西游知多少H5.jpg"/>
+			<img class="go_btn" src="img/GO-logo_07.png"/>
+		</div>		
+	<!--GO页面end-->
+	<a href="" id="page2"></a>
+	<!--提问页面-->
+		<div class="tw_wrap">
+			<img class="tw_bj" src="img/纯背景.png"/>
+			<!--Q问题布局-->
+			<img class="Q" src="img/1.png"/>
+			<div class="Q_tishu"><p class="tishup">00</p></div>	
+			<div class="Q_wenti"><span class="wenti">牛魔王的老婆<br />铁山公主又名?</span></div>	
+			<!--Q问题布局 end--> 
+			<!--题目对应图片-->
+			<div class="div">
+				<img src="icon_1-30/pic1.png"/>
+			</div>		
+			<!--ABCD答案-->
+			<ul class='daan_wrap'>
+				<li class="a_wrap">
+					<img src="img/2.png" class="tu"/>
+					<span class="d1">罗莎女</span>
+					<img class="du1" src="img/对.png"/>
+					<img class="cuo1" src="img/错.png"/>
+				</li>
+				<li class="b_wrap">
+					<img src="img/3.png" class="tu"/>
+					<span class="d2">红弗女</span>
+					<img class="du2" src="img/对.png"/>
+					<img class="cuo2" src="img/错.png"/>
+				</li>
+				<li class="c_wrap">
+					<img src="img/3.png" class="tu"/>
+					<span class="d3">药叉女</span>
+					<img class="du3" src="img/对.png"/>
+					<img class="cuo3" src="img/错.png"/>
+				</li>
+				<li class="d_wrap">
+					<img src="img/5.png" class="tu"/>
+					<span class="d4">小甜甜</span>
+					<img class="du4" src="img/对.png"/>
+					<img class="cuo4" src="img/错.png"/>
+				</li>
+			</ul>	
+		</div>
+	<!--提问页面end-->
+		<a href="" id="page3"></a>
+	<!--答对 获得称号 页面-->
+		<div class="daduich_wrap">
+			<img class="chenghao_bj" src="img/获得称号.jpg"/>
+			<!--main-->
+			<div class="main">
+			
+			</div>
+			<!--main end-->
+			<img class="wan" src="img/再玩一次.png"/>
+			<img class="dese" src="img/嘚瑟一下.png"/>
+			<img class="choujiang" src="img/抽奖.png"/>
+		</div>	
+	<!--很遗憾 答对3题页面-->
+		<div class="dadui3_wrap">
+			<img class="dadui_bj" src="img/获得称号.jpg"/>
+			<div>
+				
+			</div>
+			<img class="wan_hyh" src="img/再玩一次.png"/>
+			<img class="tiaozhan" src="img/抽奖.png"/>
+		</div>
+		<div class="dadui3_wrap">
+				<img src="img/获得称号.jpg" class="dadui_bj"/>
+				<div class="score">
+					您答对<span class="daduitishu">3</span>题，获得<span class="fenshu">3</span>分
+				</div>
+				<div class="yihan">
+					<img src="icon_1-30/pic2.png"/>
+					<h1>很遗憾</h1>
+					<p class="pp">还差一点点就可以抽奖了！~</p>
+				</div>
+				<img class="wan_hyh" src="img/再玩一次.png"/>
+				<img class="tiaozhan" src="img/抽奖.png"/>
+				<!--<img src="img/logo.png" class="logo"/>-->
+			</div>
+	
+	</div>	
+	</body>
+	<script src="jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<!--<script src="" type="text/javascript" charset="utf-8"></script>-->
+	<script type="text/javascript">
+		var wrap = document.querySelector('.wrap'),
+			 xiyou_wrap = document.querySelector('.xiyou_wrap'),
+			 go_wrap = document.querySelector('.go_wrap'),
+			  tw_wrap = document.querySelector('.tw_wrap'),
+			  jindu=document.querySelector('.jindu'),
+			monkey1 = document.querySelector(".monkey1"),
+			monkey2 = document.querySelector(".monkey2"),
+			monkey3 = document.querySelector(".monkey3"),
+			xiyou_monkey=document.querySelector(".xiyou_monkey"),
+			get_btn=document.querySelector(".get_btn"),
+			zmh_logo=document.querySelector(".zmh_logo"),
+			zmh_logo=document.querySelector(".zmh_logo1"),
+			wan=document.querySelector(".wan"),
+			dese =document.querySelector(".dese"),
+			choujiang = document.querySelector(".choujiang"),
+			du1 =document.querySelector(".du1"),
+			cuo1 =document.querySelector(".cuo1"),
+			du2 =document.querySelector(".du2"),
+			cuo2 =document.querySelector(".cuo2"),
+			du3 =document.querySelector(".du3"),
+			cuo3 =document.querySelector(".cuo3"),
+			du4 =document.querySelector(".du4"),
+			cuo4 =document.querySelector(".cuo4");
+			
+			
+		//首页猴子走动
+//		var time = setInterval(function( ){
+//			if(monkey1.style.display =="block"){
+//				monkey1.style.display="none";
+//				monkey2.style.display="block";	
+//			}else{
+//				monkey1.style.display="block";
+//				monkey2.style.display="none";	
+//			}
+//		},300)
+		var time = setInterval(function( ){
+			if(monkey1.style.display =="block"){
+				monkey1.style.display="none";
+				monkey2.style.display="block";
+				monkey3.style.display="none";
+			}else if(monkey2.style.display =="block"){
+				monkey1.style.display="none";
+				monkey2.style.display="none";
+				monkey3.style.display="block";
+			}else{
+				monkey1.style.display="block";
+				monkey2.style.display="none";
+				monkey3.style.display="none";
+			}
+//			xiyou_monkey.style.display="none";
+//			get_btn.style.display="none";
+//			zmh_logo.style.display="none";
+		},300)
+		
+		//首页芝麻糊logo
+		$(".zmh_logo1").click(function( ){
+			$(".zmh_logo1").animate({
+				top: "1.5vh",
+			},function(){
+				$(this).animate({
+					top: "1vh",
+				})
+			})
+		})
+		
+//	------------------------------------------------hash值---------------------------------------------	
+		//hash值 页面转换
+		var l = window.location;    
+		var hash =l.hash; 
+		console.log(hash);
+		$(".zmh_logo1").click(function(){
+			l.hash="#page";
+		})
+		$(".get_btn").click(function(){
+			l.hash="#page1";
+		})
+		$(".go_wrap").click(function(){
+			l.hash="#page2";
+		})
+//	-----------------------------------------------hash值 end---------------------------------------------			
+
+		//图片预加载
+//		var arr = ['img/(动)猴子-西游_03.png','img/1.png','img/2.png','img/3.png','img/4.jpg','img/5.png','img/GO-logo_07.png','img/logo-南方芝麻糊_03.png','img/p1-loading00.jpg',
+//		'img/p1-loading111.png','img/p1-loading222.png','img/p1-loading333.png','img/p2-西游知多少H5.jpg','img/√.png','img/背景图-西游知多少.jpg','img/--称号.png','img/抽奖.png',
+//		'img/纯背景.png','img/获得称号.jpg','img/西游-按钮_02.png','img/再玩一次.png','img/嘚瑟一下.png'];
+//		console.log(arr.length);
+//		var count = 0;
+//		for( var i = 0;i<arr.length;i++){
+//			var a = new Image( );
+//			a.src = arr[i];
+//			a.onload = function( ){
+//				count++;
+//				 // 标志所有图片加载完毕
+//				var percent = parseInt(count/arr.length*100);     
+//				jindu.innerText = percent + '%';
+//				if(count == arr.length); {  
+//					console.log(count);
+//					wrap.style.display="none";
+//					xiyou_wrap.style.display="block";	
+//				} 
+//			}
+//		}
+		
+		// 西游monkey
+		setInterval(function(){
+			$(".xiyou_monkey").animate({
+				bottom: "6.5vh", 
+			},function( ){
+				$(this).animate({
+					bottom: "5.5vh",
+				})
+			})	
+		},300)
+		
+		//get按钮
+		$(".get_btn").click(function(){
+			$(".get_btn").animate({
+				bottom: "2vh",
+			},function(){
+				$(this).animate({
+					bottom: "1.5vh",
+				}) 
+			})		
+		})
+		
+		//南方芝麻糊按钮
+		$(".zmh_logo").click(function(){
+			$(".zmh_logo").animate({
+				top: "1.5vh",
+			},function(){
+				$(this).animate({
+					top: "1vh",
+				})
+			})
+		})
+//		cuo1.style.display="block";
+		//A答案
+		$(".a_wrap").click(function(){
+			$(".a_wrap").animate({
+				top: "47.5vh",
+			},function(){
+				$(this).animate({
+					top: "48vh",
+				}) 
+			})
+			//题目刷新
+				//题号变化
+			if( questionList.brand[tibrand].answer[0][1]==1 || questionList.brand[tibrand].question[0][1] ==1){
+				du1.style.display="block";
+			}else{
+				cuo1.style.display="block";
+			}
+			setTimeout (function( ){
+				w( );
+				du1.style.display="none";
+				cuo1.style.display="none";
+				$(".tishup").text( "0"+tihao );
+				if( tihao == 10){
+					$(".tishup").text(tihao );
+				}
+			},1000)	
+		})
+		
+		//B答案
+		$(".b_wrap").click(function(){
+			$(".b_wrap").animate({
+				top: "59.5vh",
+			},function(){
+				$(this).animate({
+					top: "60vh", 
+				}) 
+			})
+			//题目刷新
+				//题号变化
+			if( questionList.brand[tibrand].answer[0][1] ==1|| questionList.brand[tibrand].question[0][1]==1 ){
+				du2.style.display="block";
+			}else{
+				cuo2.style.display="block";
+			}
+			setTimeout (function( ){
+				w( );
+				du2.style.display="none";
+				cuo2.style.display="none";
+				$(".tishup").text( "0"+tihao );
+				if( tihao == 10){
+					$(".tishup").text(tihao );
+					
+				}
+			},1000)	
+		})
+		
+		//C答案
+		$(".c_wrap").click(function(){
+			$(".c_wrap").animate({
+				top: "71.5vh",
+			},function(){
+				$(this).animate({
+					top: "72vh",
+				}) 
+			})
+			//题目刷新
+				//题号变化
+			if( questionList.brand[tibrand].answer[0][1]==1 || questionList.brand[tibrand].question[0][1] ==1){
+				du3.style.display="block";
+			}else{
+				cuo3.style.display="block";
+			}
+			setTimeout (function( ){
+				w( );
+				du3.style.display="none";
+				cuo3.style.display="none";
+				$(".tishup").text( "0"+tihao );
+				if( tihao == 10){
+					$(".tishup").text(tihao );
+				}
+			},1000)	
+		})
+		
+		//D答案
+		$(".d_wrap").click(function(){
+			$(".d_wrap").animate({
+				top: "83.5vh",
+			},function(){
+				$(this).animate({
+					top: "84vh",
+				}) 
+			})
+			//题目刷新
+				//题号变化
+			if( questionList.brand[tibrand].answer[0][1] ==1|| questionList.brand[tibrand].question[0][1] ==1){
+				du4.style.display="block";
+			}else{
+				cuo4.style.display="block";
+			}
+			setTimeout (function( ){
+				w( );
+				du4.style.display="none";
+				cuo4.style.display="none";
+				$(".tishup").text( "0"+tihao );
+				if( tihao == 10){
+					$(".tishup").text(tihao );
+					l.hash="#page3";
+				}
+			},1000)	
+		})
+		
+	var questionList = {
+    brand: [
+        {question: '“黑~芝麻糊~~~哎”,南方黑芝麻的经典广告片“叫卖篇”哪一年在电视上风靡全国？', answer:[["2046年",0],["1990年",0],["1991年",1],["1997年",0]],icon:22},
+        {question: '“南方黑芝麻”品牌发源地在哪里呢？', answer:[["南极",0],["南山南",0],["广西南宁",0],["广西容县",1]],icon:23},
+        {question: '砖家建议，一天吃多少克黑芝麻为宜？', answer:[["30-40g",0],["90-100g",0],["10-15g",1],["想吃多少吃多少",0]],icon:24},
+        {question: '下面不属于黑芝麻功能特性的是？', answer:[["抗衰老",0],["提高生育能力",0],["黑头发",0],["得道成仙",1]],icon:25},
+        {question: '100g黑芝麻的含钙量是100g牛奶含钙量的多少倍？', answer:[["100倍",0],["10倍",0],["7.5倍",1],["15倍",0]],icon:26},
+        {question: '南方黑芝麻糊2015年的最新广告片“音乐篇”中，翩翩起舞的女主角身穿什么颜色的裙子呢？', answer:[["黑色",0],["黄色",1],["蓝色",0],["粉色",0]],icon:27},
+        {question: '这是一道送分题，双12晚上，几点几分锁定浙江卫视可以看南到方黑芝麻糊冠名的《西游奇遇记》首播？', answer:[["20：20",1],["20：10",0],["20：00",0],["20：30",0]],icon:28},
+        {question: '南方黑芝麻糊冠名的《西游奇遇记》里金星老师扮演的是？', answer:[["白龙马",0],["女儿国国王",0],["太白金星",1],["观音菩萨",0]],icon:29},
+        {question: '南方黑芝麻糊冠名的《西游奇遇记》首站在哪里拍摄的？', answer:[["花果山",0],["西安",1],["火焰山",0],["北京",0]],icon:30}
+    ],
+    xiyou: [
+        {question: '牛魔王的老婆“铁扇公主”又名？', answer:[["小甜甜",0],["红佛女",0],["药叉女",0],["罗刹女",1]],icon:1},
+        {question: '八戒为什么长的像个猪？', answer:[["整容失败",0],["他本来就那模样",0],["投错了胎",1],["他喜欢猪，故意变成这样",0]],icon:2},
+        {question: '玉皇大帝和王母娘娘到底什么关系？', answer:[["夫妻",0],["母子",0],["同事",1],["不清不楚的关系",0]],icon:3},
+        {question: '黑熊精偷了唐僧的袈裟是为什么？', answer:[["别人的就是好的",0],["开生日趴体",1],["穿的拉轰、能泡妞",0],["金光闪闪，壕气",0]],icon:4},
+        {question: '二郎神和玉帝是什么关系？', answer:[["父子",0],["叔侄",1],["基友",0],["蓝朋友",0]],icon:5},
+        {question: '菩提始祖为什么轰走了孙悟空？', answer:[["猴子吃的太多",0],["猴子长的太帅",0],["猴子是逗逼",0],["猴子装逼",1]],icon:6},
+        {question: '白龙马是谁的儿子？', answer:[["东海龙王",0],["南海龙王",0],["北海龙王",0],["西海龙王",1]],icon:7},
+        {question: '通天河里的妖怪原本是观音菩萨池塘里的哪条鱼？', answer:[["鲤鱼",1],["鲶鱼",0],["金鱼",0],["金龙鱼",0]],icon:8},
+        {question: '孙悟空师从何处？', answer:[["唐僧",0],["菩提老祖",1],["自学成才",0],["太白金星",0]],icon:9},
+        {question: '西游记是谁写的？', answer:[["吴承恩",1],["吴奇隆",0],["吴孟达",0],["吴彦祖",0]],icon:10},
+        {question: '原著中的孙悟空和下面哪个明星身高最接近？', answer:[["郭敬明",1],["隔壁老王",0],["何炅",0],["黄晓明",0]],icon:11},
+        {question: '白龙马和被哪吒扒皮的龙三太子是什么关系？', answer:[["堂兄弟",1],["男朋友",0],["大舅舅",0],["好基友",0]],icon:12},
+        {question: '当年是哪个妖精先谣言“吃唐僧肉可长生不老”？', answer:[["黑熊怪",0],["蛇精男",0],["狮驼洞三怪",0],["金角大王",1]],icon:13},
+        {question: '要进盘丝洞，要先喊？', answer:[["傅文佩，你开门啊",0],["芝麻开门",1],["我是盘丝大仙",0],["妖精，哪里逃！",0]],icon:14},
+        {question: '猪八戒前身“天蓬元帅”在天庭任什么职？', answer:[["总政少将",0],["陆军军委",0],["海军总司令",1],["志愿兵",0]],icon:15},
+        {question: '红孩儿的真实年纪是？', answer:[["5岁",0],["300岁",1],["500岁",0],["100岁",0]],icon:16},
+        {question: '孙悟空大闹蟠桃会，变成谁的样子骗吃骗喝？', answer:[["王母娘娘",0],["赤脚大仙",1],["太上老君",0],["太白金星",0]],icon:17},
+        {question: '因为谁导致唐僧赶走孙悟空？', answer:[["孔雀公主",0],["白骨精",1],["狐狸精",0],["金鼻白毛鼠精",0]],icon:18},
+        {question: '下列人物中没有喝过“孙、八、僧”三人组的圣水的是？', answer:[["虎力大仙",0],["鹿力大仙",0],["羊力大仙",0],["牛力大仙",1]],icon:19},
+        {question: '第一个想娶唐僧的女妖怪是？', answer:[["凤姐",0],["琵琶精",1],["蝎子精",0],["玉兔精",0]],icon:20},
+        {question: '太上老君的御用炼丹炉童子是？', answer:[["青狮魔王&白象魔王&大鹏魔王&虎威魔王",0],["奔波儿灞&灞波儿奔",0],["金角大王&银角大王",1],["辟寒大王&辟暑大王&辟尘大王",0]],icon:21}
+    ]
+}
+		console.log(questionList);
+		//问题随机
+		var tibrand = (Math.random( )*9)|0;
+		var tixiyou =  (Math.random( )*20)|0;
+		var suiji =  (Math.random( )*9)|0;
+		var tihao =  0;
+		console.log(suiji);
+		console.log( tibrand );
+		//封装函数
+		function w(  ){
+			var tibrand = (Math.random( )*9)|0;
+			var tixiyou =  (Math.random( )*20)|0;
+			var suiji =  (Math.random( )*9)|0;
+			if(suiji==2 || suiji ==5 || suiji ==6){
+			$(".wenti").text( questionList.brand[tibrand].question )
+			for(var i =0; i<4; i++){
+				$(".d"+(i+1)).text( questionList.brand[tibrand].answer[i][0] )
+			}
+		}else{
+			$(".wenti").text( questionList.xiyou[tixiyou].question )
+			for(var i =0; i<4; i++){
+				$(".d"+(i+1)).text( questionList.xiyou[tixiyou].answer[i][0] )
+			}
+		}
+		tihao++;
+		console.log(tihao);
+	}
+		w( )
+		
+		
+//	//答对获得称号页面 点击
+//		//再玩一次
+//		$(".wan").click(function(){
+//			$(".wan").animate({
+//				bottom:"1vh",
+//			},function(){
+//				$(this).animate({
+//					bottom:"0",
+//				}) 
+//			})		
+//		})
+//		//嘚瑟一下
+//		$(".dese").click(function(){
+//			$(".dese").animate({
+//				bottom:"1vh"，
+//			},function(){
+//				$(this).animate({
+//					bottom:"0"，
+//				}) 
+//			})		
+//		})
+//		//点击抽奖
+//		$(".choujiang").click(function(){
+//			$(".choujiang").animate({
+//				bottom:"1vh",
+//			},function(){
+//				$(this).animate({
+//					bottom:"0",
+//				}) 
+//			})		
+//		})
+		
+	</script>
+</html>
